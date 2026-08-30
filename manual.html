@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LogPet — Uživatelský manuál</title>
+    <title>LogDog — Uživatelský manuál</title>
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 700px; margin: 40px auto; padding: 0 20px; color: #333; line-height: 1.6; }
         h1 { color: #6B3885; }
@@ -13,7 +13,6 @@
         a { color: #6B3885; }
         .tip { background: #f3eef7; border-left: 4px solid #6B3885; padding: 10px 14px; margin: 1em 0; border-radius: 0 6px 6px 0; }
         .tip strong { color: #6B3885; }
-        kbd { background: #eee; border: 1px solid #ccc; border-radius: 4px; padding: 1px 6px; font-size: 0.9em; }
         table { border-collapse: collapse; width: 100%; margin: 1em 0; }
         th, td { border: 1px solid #ddd; padding: 8px 12px; text-align: left; }
         th { background: #f5f5f5; }
@@ -22,7 +21,7 @@
     </style>
 </head>
 <body>
-    <h1>LogPet — Uživatelský manuál</h1>
+    <h1>LogDog — Uživatelský manuál</h1>
     <p class="date">Verze 1.0 · Aktualizováno: srpen 2026</p>
 
     <div class="nav">
@@ -33,6 +32,8 @@
         <a href="#history">Historie</a>
         <a href="#insights">Přehledy</a>
         <a href="#care">Péče</a>
+        <a href="#socialization">Socializace</a>
+        <a href="#widget">Widget</a>
         <a href="#settings">Nastavení</a>
         <a href="#sharing">Sdílení</a>
         <a href="#delete">Smazání účtu</a>
@@ -41,282 +42,265 @@
     <h2 id="start">1. Začínáme</h2>
 
     <h3>Přihlášení</h3>
-    <p>LogPet podporuje dva způsoby přihlášení:</p>
+    <p>LogDog podporuje dva způsoby přihlášení:</p>
     <ul>
         <li><strong>Sign in with Apple</strong> — použijte své Apple ID</li>
         <li><strong>Přihlásit se přes Google</strong> — použijte svůj Google účet</li>
     </ul>
-    <p>Po přihlášení se vaše jméno a email automaticky načtou z poskytovatele přihlášení.</p>
 
     <h3>Vytvoření skupiny péče</h3>
-    <p>Po prvním přihlášení vás aplikace provede nastavením:</p>
     <ol>
-        <li>Zvolte <strong>Vytvořit novou skupinu</strong> (nebo <strong>Připojit se pozvánkou</strong>, pokud vás někdo pozval)</li>
-        <li>Pojmenujte skupinu péče (např. „Naše rodina", „Stáj Lipany")</li>
-        <li>Přidejte první zvíře — zadejte přezdívku, vyberte druh a volitelně plemeno</li>
+        <li>Zvolte <strong>Vytvořit novou skupinu</strong> (nebo <strong>Připojit se pozvánkou</strong>)</li>
+        <li>Pojmenujte skupinu péče (např. „Naše rodina")</li>
+        <li>Přidejte svého psa — zadejte jméno a volitelně plemeno</li>
         <li>Klepněte na <strong>Vytvořit</strong></li>
     </ol>
 
-    <h3>Podporované druhy zvířat</h3>
-    <table>
-        <tr><th>Druh</th><th>Příklady specifických aktivit</th></tr>
-        <tr><td>Pes</td><td>Venčení, čůrání, bobek, pamlsek</td></tr>
-        <tr><td>Kočka</td><td>Moč (záchod), stolice (záchod), zvracení</td></tr>
-        <tr><td>Kůň</td><td>Seno, oves, jízda, výběh, pastvina, kovář</td></tr>
-        <tr><td>Králík</td><td>Seno, pelety, zelenina, bobky, čištění</td></tr>
-        <tr><td>Pták</td><td>Let, rosení, vajíčko, čištění klece</td></tr>
-        <tr><td>Ryba</td><td>Výměna vody, test vody, čištění filtru, řasy</td></tr>
-        <tr><td>Želva</td><td>Vyhřívání, koupel, UV světlo, kontrola krunýře</td></tr>
-        <tr><td>Křeček</td><td>Kolečko, výměna podestýlky, manipulace</td></tr>
-        <tr><td>Morče</td><td>Seno, zelenina, volný výběh, stříhání drápků</td></tr>
-        <tr><td>Fretka</td><td>Hraní, koupel, záchod</td></tr>
-        <tr><td>Potkan</td><td>Volný výběh, manipulace, výměna podestýlky</td></tr>
-        <tr><td>Had</td><td>Krmení kořistí, svlékání, vlhkost</td></tr>
-        <tr><td>Ještěrka</td><td>Cvrčci, UV vyhřívání, rosení</td></tr>
-    </table>
-
     <h2 id="dashboard">2. Dashboard (Dnes)</h2>
-    <p>Dashboard je hlavní obrazovka aplikace — tab <strong>Dnes</strong>. Zobrazuje přehled aktuálního dne pro vybrané zvíře.</p>
+    <p>Dashboard je hlavní obrazovka aplikace. Zobrazuje přehled aktuálního dne pro vybraného psa.</p>
 
     <h3>Status karta</h3>
-    <p>V horní části je barevná karta se jménem zvířete, druhem, věkem a dnešním datem. Karta zobrazuje statistiky specifické pro daný druh:</p>
     <ul>
-        <li><strong>Pes:</strong> spánek dnes, doba vzhůru, poslední čůrání, bobek, krmení</li>
-        <li><strong>Kočka:</strong> spánek dnes, poslední moč, stolice, krmení</li>
-        <li><strong>Kůň:</strong> poslední krmení, jízda, kovář</li>
-        <li>A další specifické statistiky pro každý druh</li>
+        <li><strong>Vzhůru od posl. spánku</strong> — jak dlouho je pes vzhůru (schová se během spánku)</li>
+        <li><strong>Vzhůru dnes</strong> — celková doba bdění dnes</li>
+        <li><strong>Spánek dnes</strong> — celkový spánek dnes (ikona zzz)</li>
+        <li><strong>Poslední čůrání, stolice, krmení</strong> — čas od poslední aktivity</li>
     </ul>
-    <p>Pokud zvíře právě spí nebo je na procházce, v pravém horním rohu karty se zobrazí <strong>aktuální stav</strong> s živým časovačem.</p>
 
-    <div class="tip"><strong>Tip:</strong> Pokud máte streak (po sobě jdoucí dny se záznamy), zobrazí se na kartě ikonka plamene 🔥 s počtem dní.</div>
+    <div class="tip"><strong>Tip:</strong> Pokud máte streak (po sobě jdoucí dny se záznamy), zobrazí se ikonka plamene s počtem dní.</div>
 
-    <h3>Přepínání zvířat</h3>
-    <p>Pokud máte více zvířat, pod status kartou se zobrazí řada tlačítek se jmény. Klepněte na jméno zvířete pro přepnutí. Status kartu můžete také přepínat swipem doleva/doprava.</p>
+    <h3>Přepínání psů</h3>
+    <p>Pokud máte více psů, v horní části se zobrazí avatary pro přepínání.</p>
 
-    <h3>Časová osa</h3>
-    <p>Pod rychlými akcemi je chronologický seznam dnešních záznamů. Každý řádek zobrazuje čas, ikonu aktivity a její název. Aktivní intervaly (běžící spánek, venčení) jsou zvýrazněné.</p>
-    <ul>
-        <li><strong>Klepnutí</strong> na záznam otevře formulář pro editaci</li>
-        <li><strong>Swipe doleva</strong> → smazání záznamu</li>
-        <li><strong>Swipe doprava</strong> → editace záznamu</li>
-    </ul>
+    <h3>Pozadí</h3>
+    <p>Na pozadí dashboardu se zobrazují jemné psí tlapky.</p>
 
     <h2 id="quick">3. Rychlé akce</h2>
-    <p>Rychlé akce jsou barevná tlačítka na dashboardu pro nejčastější záznamy. Jedním klepnutím zaznamenáte aktivitu.</p>
+    <p>Barevná tlačítka pro nejčastější záznamy. Jedním klepnutím zaznamenáte aktivitu.</p>
 
     <h3>Typy akcí</h3>
     <ul>
-        <li><strong>Jednorázové</strong> (krmení, čůrání, bobek…) — klepněte a záznam se okamžitě uloží s aktuálním časem</li>
-        <li><strong>Intervalové</strong> (spánek, venčení) — prvním klepnutím spustíte interval, druhým ho ukončíte</li>
-        <li><strong>S formulářem</strong> (váha, lék…) — klepnutí otevře formulář pro zadání hodnoty. Podržením tlačítka u některých aktivit otevřete detail místo rychlého uložení.</li>
+        <li><strong>Jednorázové</strong> (krmení, čůrání, bobek) — okamžitý záznam</li>
+        <li><strong>Intervalové</strong> (spánek, venčení) — prvním klepnutím spustíte, druhým ukončíte</li>
+        <li><strong>S formulářem</strong> (váha, lék) — otevře formulář pro zadání hodnoty</li>
     </ul>
 
     <h3>Undo (vrácení)</h3>
-    <p>Po každém rychlém záznamu se na 4 sekundy zobrazí banner <strong>„Uloženo — Vrátit"</strong>. Klepněte na něj pro okamžité vrácení záznamu.</p>
+    <p>Po záznamu se na 4 sekundy zobrazí banner <strong>„Uloženo — Vrátit"</strong>.</p>
 
-    <h3>Úprava rychlých akcí (jiggle mode)</h3>
+    <h3>Úprava rychlých akcí</h3>
     <ol>
-        <li><strong>Dlouze podržte</strong> libovolné tlačítko rychlé akce</li>
-        <li>Tlačítka se začnou třást (jako při mazání appek na ploše)</li>
-        <li>Klepněte na <strong>červený křížek</strong> ❌ pro odebrání tlačítka</li>
-        <li>Klepněte na <strong>Přidat</strong> (+) pro přidání nové aktivity na plochu</li>
-        <li>Klepněte na <strong>Hotovo</strong> pro ukončení editace</li>
+        <li><strong>Dlouze podržte</strong> libovolné tlačítko</li>
+        <li>Tlačítka se začnou třást</li>
+        <li>Klepněte na <strong>červený křížek</strong> pro odebrání nebo <strong>Přidat</strong> pro přidání nové aktivity</li>
+        <li>Klepněte na <strong>Hotovo</strong></li>
     </ol>
 
-    <h3>Další aktivita</h3>
-    <p>Tlačítko <strong>„Další aktivita"</strong> pod rychlými akcemi otevře kompletní seznam všech dostupných aktivit pro daný druh zvířete. Aktivity jsou rozdělené do kategorií: Záznamy, Intervaly, Měření, Poznámky.</p>
-
-    <h2 id="intervals">4. Intervaly</h2>
-    <p>Intervaly slouží k měření trvání aktivit jako spánek nebo venčení.</p>
+    <h2 id="intervals">4. Intervaly a Dynamic Island</h2>
+    <p>Intervaly měří trvání aktivit jako spánek nebo venčení.</p>
 
     <h3>Spuštění intervalu</h3>
     <ol>
-        <li>Klepněte na tlačítko intervalové aktivity (např. <strong>Spánek</strong> 🌙)</li>
-        <li>V navigačním baru se zobrazí název aktivity a živý časovač</li>
-        <li>Na status kartě se zobrazí aktuální stav (Spí, Venčí se…)</li>
+        <li>Klepněte na tlačítko intervalové aktivity (např. <strong>Spánek</strong>)</li>
+        <li>Na dashboardu se zobrazí živý časovač</li>
+        <li><strong>Dynamic Island</strong> na iPhonu zobrazí běžící aktivitu s ikonou a timerem</li>
     </ol>
+
+    <h3>Dynamic Island</h3>
+    <p>Když běží interval, Dynamic Island ukazuje:</p>
+    <ul>
+        <li><strong>Compact</strong> — ikona aktivity + běžící čas</li>
+        <li><strong>Expanded</strong> (po podržení) — ikona, název aktivity, jméno psa, timer</li>
+        <li><strong>Lock Screen</strong> — banner s ikonou, názvem a timerem</li>
+    </ul>
+    <p>Klepnutím na Dynamic Island se vrátíte do aplikace.</p>
 
     <h3>Ukončení intervalu</h3>
     <ul>
-        <li>Klepněte znovu na stejné tlačítko rychlé akce, nebo</li>
-        <li>Klepněte na tlačítko <strong>„Ukončit"</strong> v pravém horním rohu obrazovky</li>
+        <li>Klepněte znovu na stejné tlačítko, nebo</li>
+        <li>Klepněte na <strong>„Ukončit"</strong> na dashboardu</li>
     </ul>
 
-    <h3>Automatické ukončení</h3>
-    <p>Pokud spustíte nový interval (např. venčení), běžící protichůdný interval (spánek) se automaticky ukončí. Nemusíte ho ukončovat ručně.</p>
-
-    <div class="tip"><strong>Tip:</strong> Po 60 minutách od spuštění intervalu vám přijde upozornění, abyste nezapomněli interval ukončit.</div>
+    <div class="tip"><strong>Tip:</strong> Spuštění nového intervalu automaticky ukončí běžící interval jiného typu.</div>
 
     <h2 id="history">5. Historie</h2>
-    <p>Tab <strong>Historie</strong> zobrazuje kompletní historii záznamů vybraného zvířete.</p>
-
-    <h3>Zobrazení</h3>
+    <p>Tab <strong>Historie</strong> — kompletní historie záznamů.</p>
     <ul>
-        <li><strong>Seznam</strong> (výchozí) — záznamy seskupené po dnech, seřazené od nejnovějších</li>
-        <li><strong>Kalendář</strong> — klepněte na ikonu kalendáře vlevo nahoře. Dny se záznamy jsou zvýrazněné. Klepněte na den pro zobrazení záznamů.</li>
+        <li><strong>Seznam</strong> — záznamy seskupené po dnech</li>
+        <li><strong>Kalendář</strong> — ikona kalendáře vlevo nahoře</li>
+        <li><strong>Filtr</strong> — ikona filtru vpravo nahoře</li>
+        <li><strong>Vyhledávání</strong> — potáhněte seznam dolů</li>
     </ul>
-
-    <h3>Filtrování</h3>
-    <p>Klepněte na ikonu filtru vpravo nahoře a vyberte konkrétní typ aktivity (např. jen krmení).</p>
-
-    <h3>Vyhledávání</h3>
-    <p>Potáhněte seznam dolů pro zobrazení vyhledávacího pole. Hledá v poznámkách k záznamům.</p>
-
-    <h3>Editace a mazání</h3>
-    <ul>
-        <li><strong>Klepnutí</strong> na záznam → otevře formulář pro editaci</li>
-        <li><strong>Swipe doleva</strong> → smazání (s možností vrácení po dobu 5 sekund)</li>
-    </ul>
-
-    <h3>Načítání starších záznamů</h3>
-    <p>Historie načítá 50 záznamů najednou. Pro starší záznamy scrollujte dolů a klepněte na <strong>„Načíst další"</strong>.</p>
 
     <h2 id="insights">6. Přehledy</h2>
-    <p>Tab <strong>Přehledy</strong> zobrazuje statistiky a grafy o aktivitách vašeho zvířete.</p>
+    <p>Tab <strong>Přehledy</strong> — statistiky a grafy.</p>
 
     <h3>Období</h3>
-    <p>V horní části vyberte časový rozsah: <strong>Dnes</strong>, <strong>7 dní</strong> nebo <strong>30 dní</strong>.</p>
-
-    <h3>Postřehy</h3>
-    <p>Automaticky generované texty shrnující klíčové údaje, např.:</p>
-    <ul>
-        <li>„Freyja spí průměrně 13 h 33 min denně."</li>
-        <li>„Průměrně 4.0× krmení denně."</li>
-        <li>„Celkem 144 záznamů za období."</li>
-    </ul>
+    <p><strong>Dnes</strong>, <strong>7 dní</strong> nebo <strong>30 dní</strong>.</p>
 
     <h3>Statistiky</h3>
     <table>
         <tr><th>Kategorie</th><th>Metriky</th></tr>
-        <tr><td>Spánek</td><td>Průměrný spánek/den, počet spánků, průměrný spánek, nejdelší spánek</td></tr>
+        <tr><td>Spánek</td><td>Průměrný spánek/den, počet, průměrný, nejdelší</td></tr>
         <tr><td>Bdění</td><td>Průměrné bdění, nejdelší bdění</td></tr>
-        <tr><td>Venčení</td><td>Počet venčení, celková doba venčení</td></tr>
-        <tr><td>Počty</td><td>Čůrání, bobky, krmení, nehody, poslední váha</td></tr>
+        <tr><td>Venčení</td><td>Počet, celková doba</td></tr>
+        <tr><td>Počty</td><td>Čůrání, bobky, krmení, nehody, váha</td></tr>
     </table>
 
     <h3>Grafy</h3>
-    <ul>
-        <li><strong>Váha</strong> — spojnicový graf s vývojem váhy v čase</li>
-        <li><strong>Spánek</strong> — sloupcový graf hodin spánku po dnech</li>
-        <li><strong>Počet záznamů</strong> — horizontální sloupcový graf Top 8 aktivit</li>
-        <li><strong>Intervalové aktivity</strong> — sloupcový graf celkové doby intervalů po dnech</li>
-    </ul>
+    <p>Váha (spojnicový), spánek/den (sloupcový), počet záznamů (Top 8), intervalové aktivity.</p>
 
     <h2 id="care">7. Péče</h2>
-    <p>Tab <strong>Péče</strong> slouží k plánování a sledování pravidelné péče — léky, očkování, preventivní prohlídky a další.</p>
+    <p>Tab <strong>Péče</strong> — plánování a sledování veterinární péče.</p>
 
-    <h3>Vytvoření plánu péče</h3>
+    <h3>Předepsané protokoly</h3>
+    <p>Klepněte na <strong>„+"</strong> a vyberte kategorii:</p>
+
+    <h4>Vakcinace</h4>
+    <p>Kompletní vakcinační protokol pro štěně:</p>
+    <table>
+        <tr><th>Termín</th><th>Vakcína</th></tr>
+        <tr><td>6–8 týdnů</td><td>DHPPi — 1. dávka</td></tr>
+        <tr><td>9–12 týdnů</td><td>DHPPi — 2. dávka + Leptospiróza</td></tr>
+        <tr><td>12–16 týdnů</td><td>DHPPi — 3. dávka + Lepto 2. + Vzteklina</td></tr>
+        <tr><td>Ročně</td><td>Booster DHPPi + Lepto + Vzteklina</td></tr>
+    </table>
+    <p>Volitelně: Bordetella (psí kašel), Lyme borrelióza.</p>
+
+    <h4>Odčervení</h4>
+    <table>
+        <tr><th>Věk</th><th>Interval</th></tr>
+        <tr><td>2–8 týdnů</td><td>Každé 2 týdny</td></tr>
+        <tr><td>3–6 měsíců</td><td>Měsíčně</td></tr>
+        <tr><td>6+ měsíců</td><td>Každé 3 měsíce (celoživotně)</td></tr>
+    </table>
+
+    <h4>Antiparazitika</h4>
+    <ul>
+        <li>Spot-on / tableta — měsíčně (Nexgard, Bravecto, Frontline)</li>
+        <li>Antiparazitní obojek — dle výrobce (Seresto = 8 měsíců)</li>
+    </ul>
+
+    <h4>Veterinární kontroly</h4>
+    <ul>
+        <li>Kompletní prohlídka — 1× ročně</li>
+        <li>Kontrola zubů — 1× ročně</li>
+    </ul>
+
+    <h3>Vlastní plán</h3>
+    <p>Kategorie <strong>Vlastní</strong> otevře formulář pro libovolný plán péče s nastavením frekvence, připomínek a poznámek.</p>
+
+    <h3>Zobrazení</h3>
+    <ul>
+        <li><strong>Nadcházející</strong> — nejbližší termíny, prošlé červeně</li>
+        <li><strong>Protokoly</strong> — seskupené plány s progress barem</li>
+        <li><strong>Všechny plány</strong> — kompletní seznam</li>
+    </ul>
+
+    <div class="tip"><strong>Tip:</strong> Protokoly automaticky vypočítají termíny podle data narození vašeho štěněte.</div>
+
+    <h2 id="socialization">8. Socializace</h2>
+    <p>Tab <strong>Socializace</strong> — systematický checklist pro socializaci štěněte.</p>
+
+    <p>Kritické období pro socializaci štěněte je 3–16 týdnů věku. LogDog vám pomáhá sledovat, jaké podněty vaše štěně již zažilo.</p>
+
+    <h3>7 kategorií, 49 položek</h3>
+    <table>
+        <tr><th>Kategorie</th><th>Příklady</th></tr>
+        <tr><td>Lidé</td><td>Děti, uniformy, klobouk/brýle, vozík, skupiny, starší lidé</td></tr>
+        <tr><td>Psi a zvířata</td><td>Velký pes, malý pes, štěně, kočka, hospodářská zvířata</td></tr>
+        <tr><td>Prostředí</td><td>Nákupní centrum, veterinář, restaurace, eskalátor, výtah, různé povrchy</td></tr>
+        <tr><td>Zvuky</td><td>Vysavač, bouřka/ohňostroj, sirény, stavba, zvonění, tleskání</td></tr>
+        <tr><td>Doprava</td><td>Auto, MHD, kolo, motorka, kamion</td></tr>
+        <tr><td>Manipulace</td><td>Česání, čištění uší, drápky, koupání, zuby, oblékání</td></tr>
+        <tr><td>Předměty</td><td>Deštník, kočárek, skateboard, balóny, igelitky, mop</td></tr>
+    </table>
+
+    <h3>Jak zaznamenat</h3>
     <ol>
-        <li>Klepněte na <strong>„+"</strong> v pravém horním rohu nebo na tlačítko <strong>„Přidat plán"</strong></li>
-        <li>Vyplňte název (např. „Antiparazitikum", „Očkování vzteklina")</li>
-        <li>Vyberte kategorii: <strong>Léky</strong>, <strong>Prevence</strong>, <strong>Prohlídka</strong> nebo <strong>Péče</strong></li>
-        <li>Nastavte frekvenci:
-            <ul>
-                <li><strong>Jednorázově</strong> — jednou, v konkrétní den</li>
-                <li><strong>Denně</strong> — každý den, s volitelným počtem dávek</li>
-                <li><strong>Vybrané dny</strong> — vyberte konkrétní dny v týdnu (Po–Ne)</li>
-                <li><strong>Pravidelně</strong> — každých X dní/týdnů/měsíců nebo ročně</li>
-            </ul>
-        </li>
-        <li>Volitelně: přidejte poznámku, počet celkových dávek, časy podání</li>
+        <li>Klepněte na kategorii (např. Prostředí)</li>
+        <li>Klepněte na položku (např. Eskalátor)</li>
+        <li>Zvolte reakci psa: 😰 Strach → 😟 Nejistota → 😐 Neutrální → 🐶 Zvědavost → 🎉 Nadšení</li>
+        <li>Volitelně přidejte poznámku</li>
         <li>Klepněte na <strong>Uložit</strong></li>
     </ol>
 
-    <h3>Detail plánu</h3>
-    <p>Klepněte na plán v seznamu pro zobrazení detailu:</p>
+    <h3>Sledování pokroku</h3>
     <ul>
-        <li><strong>Statistiky</strong> — počet splněných, vynechaných, zbývajících, úspěšnost</li>
-        <li><strong>Progress bar</strong> — vizuální zobrazení pokroku (pokud je nastaven celkový počet dávek)</li>
-        <li><strong>Záznamy</strong> — chronologický seznam všech podání s možností zaznamenat stav:
-            <ul>
-                <li>✅ <strong>Splněno</strong></li>
-                <li>⚠️ <strong>Částečně</strong></li>
-                <li>⏭️ <strong>Vynecháno</strong></li>
-                <li>❌ <strong>Odmítnuto</strong></li>
-            </ul>
-        </li>
+        <li><strong>Hlavní přehled</strong> — celkový progress (např. „24/49 — 49 %")</li>
+        <li><strong>Grid kategorií</strong> — progress bar u každé kategorie</li>
+        <li><strong>Tip</strong> — náhodný neprozkoumaný podnět k vyzkoušení</li>
     </ul>
 
-    <h3>Příští termín</h3>
-    <p>U opakovaných plánů se automaticky počítá příští termín. Prošlé termíny se zobrazují červeně.</p>
+    <div class="tip"><strong>Tip:</strong> Socializační data se automaticky vytvoří při prvním otevření tabu.</div>
 
-    <h2 id="settings">8. Nastavení</h2>
-    <p>Tab <strong>Nastavení</strong> obsahuje správu zvířat, skupiny péče, vzhledu a dat.</p>
+    <h2 id="widget">9. Widget a rychlé akce z plochy</h2>
 
-    <h3>Profil zvířete</h3>
-    <p>Klepněte na <strong>Upravit profil</strong> pro změnu:</p>
+    <h3>Přidání widgetu</h3>
+    <ol>
+        <li>Podržte prst na ploše iPhonu</li>
+        <li>Klepněte na <strong>„+"</strong> vlevo nahoře</li>
+        <li>Vyhledejte <strong>LogDog</strong></li>
+        <li>Vyberte velikost: <strong>malý</strong> (4 akce) nebo <strong>střední</strong> (6 akcí)</li>
+    </ol>
+
+    <h3>Používání</h3>
+    <p>Widget zobrazuje vaše pinnuté rychlé akce jako tlačítka. Klepněte na tlačítko a záznam se uloží <strong>bez otevření aplikace</strong>.</p>
+
+    <div class="tip"><strong>Důležité:</strong> Před prvním použitím widgetu otevřete aplikaci, aby se synchronizovala data.</div>
+
+    <h2 id="settings">10. Nastavení</h2>
+    <p>Nastavení otevřete klepnutím na <strong>ikonu ozubeného kolečka</strong> vpravo nahoře na dashboardu.</p>
+
+    <h3>Profil psa</h3>
     <ul>
-        <li>Jméno, plemeno, pohlaví, datum narození</li>
-        <li>Kastrovaný/nekastrovaný</li>
-        <li>Fotografie (z galerie)</li>
-        <li>Barva karty (10 barev k výběru)</li>
+        <li>Jméno, plemeno, pohlaví (pes/fena), kastrace</li>
+        <li>Fotografie, barva profilu (10 barev)</li>
+        <li>Datum narození</li>
     </ul>
 
-    <h3>Nastavení aktivit</h3>
-    <p>Klepněte na <strong>Nastavení aktivit</strong> pro správu aktivit přiřazených vašemu zvířeti — povolení/zakázání, změna aliasu.</p>
+    <h3>Přidání dalšího psa</h3>
+    <p>V sekci <strong>Všichni psi</strong> klepněte na <strong>Přidat psa</strong>.</p>
 
-    <h3>Přidání dalšího zvířete</h3>
-    <p>V sekci <strong>Všechna zvířata</strong> klepněte na <strong>Přidat zvíře</strong>. Vyplňte jméno, druh a volitelně plemeno.</p>
-
-    <h3>Archivace zvířete</h3>
-    <p>Swipněte doleva na zvířeti v seznamu a zvolte <strong>Archivovat</strong>. Archivované zvíře zmizí z aktivního seznamu, ale jeho historie zůstane zachována.</p>
-
-    <h3>Vzhled</h3>
+    <h3>Další nastavení</h3>
     <ul>
-        <li><strong>Vzhled:</strong> Systémový / Světlý / Tmavý</li>
-        <li><strong>Jednotky:</strong> Metrické (kg, °C) / Imperiální (lb, °F)</li>
+        <li>Nastavení aktivit — zapnutí/vypnutí, aliasy</li>
+        <li>Vzhled — systémový/světlý/tmavý</li>
+        <li>Jednotky — metrické/imperiální</li>
+        <li>Vlastní typy aktivit</li>
+        <li>Export dat (CSV/JSON)</li>
     </ul>
 
-    <h3>Typy aktivit</h3>
-    <p>V nabídce <strong>Typy aktivit</strong> si můžete vytvořit vlastní aktivity s vlastní ikonou a barvou.</p>
-
-    <h3>Export dat</h3>
-    <p>Klepněte na <strong>Export dat</strong> pro stažení záznamů vybraného zvířete ve formátu:</p>
-    <ul>
-        <li><strong>CSV</strong> — tabulkový formát, otevřete v Excelu nebo Numbers</li>
-        <li><strong>JSON</strong> — strukturovaný formát pro vývojáře</li>
-    </ul>
-    <p>Po vygenerování se otevře systémový dialog pro sdílení — uložte do Souborů, pošlete emailem apod.</p>
-
-    <h2 id="sharing">9. Sdílení a skupiny péče</h2>
-    <p>LogPet umožňuje sdílet péči o zvíře s rodinou nebo dalšími pečovateli.</p>
+    <h2 id="sharing">11. Sdílení a skupiny péče</h2>
+    <p>Sdílejte péči o psa s rodinou nebo dalšími pečovateli.</p>
 
     <h3>Pozvání členů</h3>
     <ol>
-        <li>Jděte do <strong>Nastavení → Pozvánky</strong></li>
-        <li>Klepněte na <strong>Vytvořit pozvánku</strong></li>
-        <li>Swipněte doprava na pozvánce a zvolte <strong>Sdílet</strong></li>
-        <li>Pošlete kód pozvánky druhé osobě (SMS, email, WhatsApp…)</li>
+        <li>Nastavení → <strong>Pozvánky</strong></li>
+        <li><strong>Vytvořit pozvánku</strong></li>
+        <li>Sdílejte kód pozvánky</li>
     </ol>
-
-    <h3>Připojení se</h3>
-    <p>Příjemce pozvánky otevře LogPet, po přihlášení zvolí <strong>Připojit se pozvánkou</strong> a zadá kód.</p>
 
     <h3>Role</h3>
     <table>
         <tr><th>Role</th><th>Práva</th></tr>
-        <tr><td><strong>Vlastník</strong> (Owner)</td><td>Vše — správa členů, mazání zvířat a skupiny</td></tr>
-        <tr><td><strong>Správce</strong> (Admin)</td><td>Správa členů, přidávání zvířat</td></tr>
-        <tr><td><strong>Editor</strong></td><td>Zaznamenávání aktivit, editace záznamů</td></tr>
-        <tr><td><strong>Čtenář</strong> (Viewer)</td><td>Pouze prohlížení — nemůže přidávat záznamy</td></tr>
+        <tr><td><strong>Vlastník</strong></td><td>Vše — správa členů, mazání</td></tr>
+        <tr><td><strong>Správce</strong></td><td>Správa členů, přidávání psů</td></tr>
+        <tr><td><strong>Editor</strong></td><td>Zaznamenávání a editace</td></tr>
+        <tr><td><strong>Čtenář</strong></td><td>Pouze prohlížení</td></tr>
     </table>
 
-    <h3>Přepínání skupin</h3>
-    <p>Pokud jste členem více skupin, přepněte mezi nimi v <strong>Nastavení → Přepnout skupinu</strong>.</p>
-
     <h3>Synchronizace v reálném čase</h3>
-    <p>Záznamy se mezi členy skupiny synchronizují automaticky v reálném čase. Pokud váš partner zaznamená krmení, uvidíte to na svém dashboardu okamžitě.</p>
+    <p>Záznamy se mezi členy synchronizují automaticky.</p>
 
-    <h2 id="delete">10. Smazání účtu</h2>
-    <p>Pokud chcete smazat svůj účet a veškerá data:</p>
+    <h2 id="delete">12. Smazání účtu</h2>
     <ol>
-        <li>Jděte do <strong>Nastavení</strong></li>
-        <li>Scrollujte úplně dolů</li>
-        <li>Klepněte na <strong>„Smazat účet a všechna data"</strong></li>
-        <li>Potvrďte v dialogovém okně</li>
+        <li>Nastavení (gear ikona) → scrollujte dolů</li>
+        <li><strong>„Smazat účet a všechna data"</strong></li>
+        <li>Potvrďte</li>
     </ol>
 
-    <div class="tip"><strong>⚠️ Pozor:</strong> Tato akce je <strong>nevratná</strong>. Budou trvale smazána všechna vaše zvířata, záznamy aktivit, plány péče, členství ve skupinách a váš profil. Doporučujeme nejdříve exportovat svá data.</div>
+    <div class="tip"><strong>Pozor:</strong> Tato akce je <strong>nevratná</strong>. Budou smazáni všichni vaši psi, záznamy, plány péče, socializační data a váš profil. Doporučujeme nejdříve exportovat data.</div>
 
     <hr style="margin-top: 3em;">
 
@@ -324,6 +308,6 @@
         <a href="privacy.html">Ochrana osobních údajů</a> ·
         <a href="terms.html">Podmínky používání</a>
     </p>
-    <p style="color: #888; font-size: 0.85em;">© 2026 Jan Kryhút · <a href="mailto:jan@kryhut.cz">jan@kryhut.cz</a></p>
+    <p style="color: #888; font-size: 0.85em;">&copy; 2026 Jan Kryhut &middot; <a href="mailto:jan@kryhut.cz">jan@kryhut.cz</a></p>
 </body>
 </html>
